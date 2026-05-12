@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplicativo de Transporte</title>
+
+    <style>
+
+        body{
+            background: lightblue;
+            text-align: center;
+            font-family: Arial;
+            overflow: hidden;
+        }
+
+        h1{
+            margin-top: 50px;
+        }
+
+        .carro{
+            width: 200px;
+            height: 60px;
+            background: blue;
+            position: relative;
+            margin-top: 200px;
+
+            animation: mover 5s infinite;
+        }
+
+        .roda{
+            width: 40px;
+            height: 40px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -20px;
+        }
+
+        .roda1{
+            left: 20px;
+        }
+
+        .roda2{
+            right: 20px;
+        }
+
+        @keyframes mover{
+
+            from{
+                left: -220px;
+            }
+
+            to{
+                left: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Aplicativo de Transporte</h1>
+
+    <div class="carro">
+
+        <div class="roda roda1"></div>
+
+        <div class="roda roda2"></div>
+
+    </div>
+
+</body>
